@@ -1,0 +1,125 @@
+.game-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 25px;
+}
+
+.game-entry {
+  display: flex;
+  align-items: stretch;
+  gap: 25px;
+
+  padding: 25px;
+
+  color: white;
+  background-color: rgb(21, 29, 56);
+
+  border: 4px solid rgb(45, 226, 230);
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+.game-information {
+  flex: 1.1;
+}
+
+.game-previews {
+  flex: 1.1;
+}
+
+.game-gallery {
+  flex: 0.9;
+  .game-gallery {
+  padding: 15px;
+  background-color: rgb(1, 1, 46);
+  border-radius: 8px;
+}
+
+.game-gallery h3 {
+  color: rgb(255, 209, 102);
+  text-align: center;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery-images img {
+  flex: 0 0 calc(50% - 7.5px);
+
+  width: calc(50% - 7.5px);
+  height: 170px;
+
+  object-fit: cover;
+
+  border: 3px solid transparent;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+}
+
+.gallery-images img:hover {
+  border-color: rgb(255, 209, 102);
+}
+}
+
+.game-cover {
+  display: block;
+
+  width: 100%;
+  height: 520px;
+
+  object-fit: contain;
+  background-color: black;
+}
+
+.game-description {
+  flex: 1;
+
+  margin-top: 20px;
+  padding: 20px;
+
+  background-color: rgb(1, 1, 46);
+  border-radius: 8px;
+  color: rgb(255, 209, 102);
+  line-height: 1.6;
+}
+
+.game-previews {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.preview-panel {
+  flex: 1;
+
+  padding: 15px;
+  text-align: center;
+
+  background-color: rgb(1, 1, 46);
+
+  border: 3px solid rgb(248, 15, 229);
+  border-radius: 8px;
+}
+
+.preview-panel h3 {
+  color: rgb(255, 209, 102);
+}
+
+.preview-panel img {
+  display: block;
+
+  width: 100%;
+  height: 280px;
+
+  object-fit: contain;
+  background-color: black;
+}
