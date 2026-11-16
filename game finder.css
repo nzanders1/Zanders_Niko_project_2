@@ -1,6 +1,4 @@
-body {
- 
- .nav-list {
+.nav-list {
   background-color: rgb(248, 15, 229);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
@@ -34,34 +32,140 @@ body {
   max-height: 400px;
   object-fit: cover;
 }
- 
-  margin: 0;
 
-  background-image: url("images/Untitled-3.png");
+
+.finder-panel {
+  width: calc(100% - 80px);
+  max-width: 850px;
+
+  margin: 50px auto;
+  padding: 35px;
+
+  color: white;
+  background-color: rgba(1, 1, 46, 0.92);
+
+  border: 4px solid rgb(45, 226, 230);
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+.finder-panel h1,
+.finder-panel h2,
+.finder-panel h3 {
+  color: rgb(255, 209, 102);
+}
+
+.finder-controls {
+  display: flex;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.selection-group {
+  flex: 1;
+}
+
+.selection-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.selection-group select {
+  width: 100%;
+  padding: 12px;
+
+  color: white;
+  background-color: rgb(21, 29, 56);
+
+  border: 2px solid rgb(248, 15, 229);
+  border-radius: 6px;
+}
+
+#find-game {
+  padding: 15px 25px;
+
+  color: rgb(1, 1, 46);
+  background-color: rgb(255, 209, 102);
+
+  border: none;
+  border-radius: 6px;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#find-game:hover {
+  background-color: rgb(45, 226, 230);
+}
+
+.result-card {
+  margin-top: 35px;
+  padding: 25px;
+
+  text-align: center;
+  background-color: rgb(21, 29, 56);
+
+  border: 3px solid rgb(248, 15, 229);
+  border-radius: 10px;
+}
+
+.result-card img {
+  display: block;
+
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+
+  margin: 20px auto;
+
+  object-fit: contain;
+  background-color: black;
+}
+
+.result-card a {
+  color: rgb(45, 226, 230);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-color: rgb(1, 1, 46);
+  background-image: url("Images/Untitled-3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
 
-  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
 }
 
-body {background-color:rgb(1, 1, 46)
-
+main {
+  flex: 1;
 }
 
-h1{color:rgb(207, 253, 0);
-   background-color:rgb(1, 1, 46); 
-} 
+footer {
+  margin-top: auto;
+  padding: 30px 25px;
 
-h2{color:rgb(207, 253, 0);
-background-color:rgb(1, 1, 46);
-}
-
-
-h3{color:rgb(207, 253, 0);
-background-color:rgb(1, 1, 46);
+  color: white;
+  background-color: rgb(248, 15, 229);
 }
 
 
-article{color:rgb(255, 255, 255);}
+
+
+
+
+@media (max-width: 650px) {
+  .finder-controls {
+    flex-direction: column;
+  }
+}
+
+

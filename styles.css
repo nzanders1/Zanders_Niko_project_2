@@ -1,19 +1,45 @@
-body {background-color:rgb(1, 1, 46)
+@font-face {
+  font-family: "Press Start 2P";
 
+  src: url("Fonts/PressStart2P-Regular.ttf")
+    format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-h1{color:rgb(255, 255, 255);}
+#introduction {
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
 
-h2{color:rgb(255, 255, 255);}
 
-h3{color:rgb(255, 255, 255);}
 
-p1{color:rgb(255, 255, 255);} 
-p2{color:rgb(255, 255, 255);} 
-p3{color:rgb(255, 255, 255);} 
-p4{color:rgb(255, 255, 255);} 
+body {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(1, 1, 46);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
 
-article{color:rgb(255, 255, 255);}
+h1,
+h2,
+h3,
+.nav-item a {
+  color: rgb(255, 255, 255);
+  font-family: "Press Start 2P", monospace;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+}
+
+article {
+  color: rgb(255, 255, 255);
+}
+
 
 
 .nav-list {
@@ -49,4 +75,19 @@ article{color:rgb(255, 255, 255);}
   height: auto;
   max-height: 400px;
   object-fit: cover;
+  display: block;
+}
+
+footer {
+  margin-top: auto;
+  padding: 15px 25px;
+  color: white;
+  background-color: rgb(7, 0, 6);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
 }

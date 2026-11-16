@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="game finder.css">
+   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="game finder.css">
+    
 
 
 </head>
 <body>
 
-<nav>
+   
+  <nav>
   <ul class="nav-list">
 
     <li class="nav-item-logo">
@@ -37,13 +40,82 @@
   </ul>
 </nav>
 
+ <main class="finder-panel">
+
+  <h1>Game Finder</h1>
+
+  <p>
+    Choose a genre and mood to receive a game recommendation.
+  </p>
+
+  <div class="finder-controls">
+
+    <div class="selection-group">
+      <label for="genre">Select a Genre</label>
+
+      <select id="genre">
+        <option value="any">Any Genre</option>
+        <option value="beat-em-up">Beat 'em up</option>
+        <option value="fighting">Fighting</option>
+        <option value="jrpg">JRPG</option>
+        <option value="platformer">Platformer</option>
+        <option value="racing">Racing</option>
+        <option value="rhythm">Rhythm</option>
+        <option value="shooter">Shooter</option>
+      </select>
+    </div>
+
+    <div class="selection-group">
+      <label for="mood">Select a Mood</label>
+
+      <select id="mood">
+        <option value="any">Any Mood</option>
+        <option value="energetic">Energetic</option>
+        <option value="competitive">Competitive</option>
+        <option value="cooperative">Cooperative</option>
+        <option value="dark">Dark</option>
+        <option value="story">Story-focused</option>
+        <option value="stylish">Stylish</option>
+        <option value="lighthearted">Lighthearted</option>
+        <option value="supernatural">Supernatural</option>
+      </select>
+    </div>
+
+  </div>
+
+  <button type="button" id="find-game">
+    Find My Game
+  </button>
+
+  <section id="recommendation" class="result-card" hidden>
+
+    <h2>Your Recommendation</h2>
+
+    <img
+      id="result-image"
+      src=""
+      alt=""
+    >
+
+    <h3 id="result-title"></h3>
+
+    <p id="result-description"></p>
+
+    <a href="game collection.html">
+      View the Game Collection
+    </a>
+
+  </section>
+
+</main>
+
+<footer>
+    <p>Neeky's Virtual Game Space</p>
+  </footer>
 
 
-    <h1>Game Finder</h1>
-<h2>Choose Your Preferences</h2>
-<h3>Select a Genre</h3>
-<h3>Select a Mood</h3>
-<h2>Your Recommendation</h2>
+
+<script src="game finder.js"></script>
 </body>
 
 </html>
